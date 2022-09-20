@@ -497,9 +497,10 @@ enum ModelType: CaseIterable {
   case efficientDetLite0
   case efficientDetLite1
   case efficientDetLite2
+  case efficientdet0
+  case efficientdet0_2k
   case ssdMobileNetV1
   case ssdMobileNetV2FPNLite320Hand
-  case efficientdetD0_512_Object
 
   var modelFileInfo: FileInfo {
     switch self {
@@ -510,11 +511,13 @@ enum ModelType: CaseIterable {
     case .efficientDetLite1:
       return FileInfo("efficientdet_lite1", "tflite")
     case .efficientDetLite2:
-      return FileInfo("efficientdet_lite2", "tflite")
+      return FileInfo("efficientdet-lite2_hand", "tflite")
+    case .efficientdet0:
+      return FileInfo("efficientdet_d0", "tflite")
+    case .efficientdet0_2k:
+      return FileInfo("efficientdet_d0_2k", "tflite")
     case .ssdMobileNetV2FPNLite320Hand:
       return FileInfo("ssd_mobilenet_v2_fpnlite_320_quantized", "tflite")
-    case .efficientdetD0_512_Object:
-        return FileInfo("efficientdet_d0_512_quantized", "tflite")
     }
   }
 
@@ -527,20 +530,22 @@ enum ModelType: CaseIterable {
     case .efficientDetLite1:
       return "EfficientDet-Lite1"
     case .efficientDetLite2:
-      return "EfficientDet-Lite2"
+      return "EfficientDet-Lite2-Gesture"
+    case .efficientdet0:
+      return "EfficientDet0-Gesture"
+    case .efficientdet0_2k:
+      return "EfficientDet0-Gesture_2k_images"
     case .ssdMobileNetV2FPNLite320Hand:
       return "SSD-MobileNetV2Hand"
-    case .efficientdetD0_512_Object:
-      return "EfficientDetD0-512-Object"
     }
   }
 }
 
 /// Default configuration
 struct ConstantsDefault {
-    static let modelType: ModelType = .efficientdetD0_512_Object
+  static let modelType: ModelType = .efficientdet0
   static let threadCount = 1
-  static let scoreThreshold: Float = 0.5
+  static let scoreThreshold: Float = 0.4
   static let maxResults: Int = 3
   static let theadCountLimit = 10
 }

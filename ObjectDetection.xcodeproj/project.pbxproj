@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1E80B32721521BCC7B34949C /* Pods_ObjectDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B7188819D4ABCA5FEB2A57A /* Pods_ObjectDetection.framework */; };
-		234D491D2897F4F800370466 /* efficientdet_d0_512_quantized.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 234D491C2897F4F800370466 /* efficientdet_d0_512_quantized.tflite */; };
+		231B3F1128C2244600987E98 /* efficientdet-lite2_hand.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 231B3F1028C2244600987E98 /* efficientdet-lite2_hand.tflite */; };
+		232DC1AD28CA0B9C0088A110 /* efficientdet_d0.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 232DC1AC28CA0B9C0088A110 /* efficientdet_d0.tflite */; };
+		23ADF63A28CF3E3C0069E6E0 /* efficientdet_d0_2k.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 23ADF63928CF3E3C0069E6E0 /* efficientdet_d0_2k.tflite */; };
 		23EC4ADC289424AC00909D98 /* ssd_mobilenet_v2_fpnlite_320_quantized.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 23EC4ADB289424AC00909D98 /* ssd_mobilenet_v2_fpnlite_320_quantized.tflite */; };
 		23EC4ADE2894339800909D98 /* ssd_mobilenet_v1.tflite in Resources */ = {isa = PBXBuildFile; fileRef = 23EC4ADD2894339800909D98 /* ssd_mobilenet_v1.tflite */; };
 		AA119EA2217F337300DE46CF /* ObjectDetectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA119EA1217F337300DE46CF /* ObjectDetectionHelper.swift */; };
@@ -27,7 +29,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		234D491C2897F4F800370466 /* efficientdet_d0_512_quantized.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = efficientdet_d0_512_quantized.tflite; sourceTree = "<group>"; };
+		231B3F1028C2244600987E98 /* efficientdet-lite2_hand.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = "efficientdet-lite2_hand.tflite"; sourceTree = "<group>"; };
+		232DC1AC28CA0B9C0088A110 /* efficientdet_d0.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = efficientdet_d0.tflite; sourceTree = "<group>"; };
+		23ADF63928CF3E3C0069E6E0 /* efficientdet_d0_2k.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = efficientdet_d0_2k.tflite; sourceTree = "<group>"; };
 		23EC4ADB289424AC00909D98 /* ssd_mobilenet_v2_fpnlite_320_quantized.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ssd_mobilenet_v2_fpnlite_320_quantized.tflite; sourceTree = "<group>"; };
 		23EC4ADD2894339800909D98 /* ssd_mobilenet_v1.tflite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ssd_mobilenet_v1.tflite; sourceTree = "<group>"; };
 		2B7188819D4ABCA5FEB2A57A /* Pods_ObjectDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObjectDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -74,8 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				AA119EA1217F337300DE46CF /* ObjectDetectionHelper.swift */,
-				234D491C2897F4F800370466 /* efficientdet_d0_512_quantized.tflite */,
+				23ADF63928CF3E3C0069E6E0 /* efficientdet_d0_2k.tflite */,
+				231B3F1028C2244600987E98 /* efficientdet-lite2_hand.tflite */,
 				23EC4ADD2894339800909D98 /* ssd_mobilenet_v1.tflite */,
+				232DC1AC28CA0B9C0088A110 /* efficientdet_d0.tflite */,
 				23EC4ADB289424AC00909D98 /* ssd_mobilenet_v2_fpnlite_320_quantized.tflite */,
 				BF1FBCA92844A35100E05940 /* efficientdet_lite0.tflite */,
 				BF1FBCAB2844A35100E05940 /* efficientdet_lite1.tflite */,
@@ -214,15 +220,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				234D491D2897F4F800370466 /* efficientdet_d0_512_quantized.tflite in Resources */,
 				BF43FFBA2845ABFD00D8FB74 /* efficientdet_lite0.tflite in Resources */,
 				BF43FFBB2845ABFD00D8FB74 /* efficientdet_lite1.tflite in Resources */,
 				23EC4ADC289424AC00909D98 /* ssd_mobilenet_v2_fpnlite_320_quantized.tflite in Resources */,
 				23EC4ADE2894339800909D98 /* ssd_mobilenet_v1.tflite in Resources */,
 				BF43FFBC2845ABFD00D8FB74 /* efficientdet_lite2.tflite in Resources */,
 				AA9AC5A9212D39FD000B4E9D /* LaunchScreen.storyboard in Resources */,
+				231B3F1128C2244600987E98 /* efficientdet-lite2_hand.tflite in Resources */,
 				AA9AC5A6212D39FD000B4E9D /* Assets.xcassets in Resources */,
+				23ADF63A28CF3E3C0069E6E0 /* efficientdet_d0_2k.tflite in Resources */,
 				AA9AC5A4212D39FC000B4E9D /* Main.storyboard in Resources */,
+				232DC1AD28CA0B9C0088A110 /* efficientdet_d0.tflite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
